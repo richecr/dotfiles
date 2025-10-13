@@ -16,10 +16,10 @@ decorations = "None"
 
 [keyboard]
 bindings = [
-{ key = "F11", action = "ToggleFullscreen" },
-{ key = "C", mods = "Control", action = "Copy" },
-{ key = "V", mods = "Control", action = "Paste" },
-{ key = "X", mods = "Control", chars = "\u0003" }
+  { key = "F11", action = "ToggleFullscreen" },
+  { key = "C", mods = "Control", action = "Copy" },
+  { key = "V", mods = "Control", action = "Paste" },
+  { key = "X", mods = "Control", chars = "\u0003" }
 ]
 
 [terminal.shell]
