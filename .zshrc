@@ -123,9 +123,6 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
-export PATH="$HOME/.local/bin:$PATH"
-eval "$(mise activate zsh)"
-
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
@@ -136,5 +133,11 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
+
+export PATH="$HOME/.local/bin:$PATH"
+eval "$(mise activate zsh)"
 
 . "$HOME/.local/bin/env"
