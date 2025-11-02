@@ -1,4 +1,5 @@
 [tools]
 bun = "latest"
+go = "1.25.3"
 node = "lts"
 python = "latest"

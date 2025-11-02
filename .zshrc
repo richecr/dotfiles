@@ -123,7 +123,8 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
-export PATH=$PATH:/usr/local/go/bin
+export PATH="$HOME/.local/bin:$PATH"
+eval "$(mise activate zsh)"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
