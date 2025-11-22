@@ -106,10 +106,10 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+# Golang
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 
 export PATH="$HOME/.local/bin:$PATH"
-eval "$(mise activate zsh)"
 
 # . "$HOME/.local/bin/env"
