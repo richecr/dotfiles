@@ -8,7 +8,10 @@ I'm using stow to configure.
 Inside the root of the repo
 
 ```sh
-stow .
+stow -t $HOME hypr
+stow -t $HOME alacritty
+...
+stow -t $HOME zsh
 ```
 
 ## Move a configuration to dotfiles
@@ -16,6 +19,6 @@ stow .
 Inside the root of the repo
 
 ```sh
-mv ~/.config/<my_folder> ./.config
+mkdir hypr/.config # example
+mv ~/.config/hypr hypr/.config
 ```
-
